@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Sign : MonoBehaviour
+public class Dialogue : MonoBehaviour
 {
     public string nickname;
     [TextArea(3, 10)]
@@ -17,12 +17,15 @@ public class Sign : MonoBehaviour
     AudioSource myAudio;
     public AudioClip speakSound;
     public bool playerInRange;
+    public bool getItem = false;
+    ReceiveItems receiveItems;
 
     // Start is called before the first frame update
     void Start()
     {
         sentences = new Queue<string>();
         myAudio = GetComponent<AudioSource>();
+        receiveItems = GetComponent<ReceiveItems>();
     }
 
     void startDialogue()
@@ -43,17 +46,32 @@ public class Sign : MonoBehaviour
             dialogueText.text = activeSentece;
             return;
         }
-        if (sentences.Count == 1)
+        else if (sentences.Count == 0)
         {
-            Debug.Log("entré");
+            Debug.Log(sentences.Count);
             nextDialogue.SetActive(false);
-        } else if (sentences.Count > 0)
+            if (receiveItems.haveItem)
+            {
+                nextDialogue.SetActive(true);
+                if (Input.GetKeyDown(KeyCode.Return))
+                {
+                    Debug.Log("item");
+                    dialogueBox.SetActive(false);
+                    nextDialogue.SetActive(false);
+                    StartCoroutine(WaitItem());
+                }
+            }
+        }
+        if (receiveItems.haveItem == false && sentences.Count <= 1)
+        {
+            nextDialogue.SetActive(false);
+        } else
         {
             nextDialogue.SetActive(true);
         }
-        
         activeSentece = sentences.Dequeue();
         dialogueText.text = activeSentece;
+        
         StopAllCoroutines();
         StartCoroutine(TypeTheSentence(activeSentece));
     }
@@ -67,6 +85,13 @@ public class Sign : MonoBehaviour
             // myAudio.PlayOneShot(speakSound);
             yield return new WaitForSeconds(typingSpeed);
         }
+    }
+
+    IEnumerator WaitItem()
+    {
+        yield return new WaitForSeconds(0.6f);
+        receiveItems.banner.SetActive(true);
+        getItem = true;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -101,6 +126,12 @@ public class Sign : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (getItem && Input.GetKeyDown(KeyCode.Return) && receiveItems.haveItem == true)
+        {
+            receiveItems.banner.SetActive(false);
+            StopAllCoroutines();
+            receiveItems.playerGotMap = true;
+            receiveItems.haveItem = false;
+        }
     }
 }
