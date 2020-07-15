@@ -35,6 +35,13 @@ public class WhereAmI : MonoBehaviour
             maxPosition.y = 39.96f;
             minPosition.x = -10.31f;
             minPosition.y = 20f;
+        }else if (col.CompareTag("Player") && room.name == "WhereAmI3")
+        {
+            Debug.Log("Estoy en la Room3");
+            maxPosition.x = 37.31f;
+            maxPosition.y = 7.94f;
+            minPosition.x = 2.28f;
+            minPosition.y = -1.93f;
         }
     }
 }
