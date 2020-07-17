@@ -7,5 +7,7 @@ Esto de acá es una descripción, a continuación vamos a poner una lista de con
 
 <h2 id="Intro">Introducción</h2>
 
-
+```js
+     let conflicto = undefined;
+```
 
