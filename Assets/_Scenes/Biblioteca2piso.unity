@@ -4108,6 +4108,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1251616037304077962, guid: 8f6b40cebb194408586ce2e39f951c86,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 954248624}
     m_RemovedComponents:
     - {fileID: 1251616037304077967, guid: 8f6b40cebb194408586ce2e39f951c86, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8f6b40cebb194408586ce2e39f951c86, type: 3}
@@ -4297,7 +4302,7 @@ MonoBehaviour:
   sceneToLoad: Biblioteca3Piso
   playerPosition: {x: -2.71, y: -5.17}
   playerStorage: {fileID: 11400000, guid: 3cc235b5a5be68043b6204b953eed2cd, type: 2}
-  fadeInPanel: {fileID: 4346101693450095566, guid: 8511210bacc7a5a40870eda02170c7fa,
+  fadeInpanel: {fileID: 4346101693450095566, guid: 8511210bacc7a5a40870eda02170c7fa,
     type: 3}
   fadeOutPanel: {fileID: 1188059961053543029, guid: 2e3b693f08f494442ad83d9671cb7c7b,
     type: 3}
@@ -12608,7 +12613,7 @@ MonoBehaviour:
   sceneToLoad: Biblioteca
   playerPosition: {x: -3.282271, y: -6.30259}
   playerStorage: {fileID: 11400000, guid: 3cc235b5a5be68043b6204b953eed2cd, type: 2}
-  fadeInPanel: {fileID: 4346101693450095566, guid: 8511210bacc7a5a40870eda02170c7fa,
+  fadeInpanel: {fileID: 4346101693450095566, guid: 8511210bacc7a5a40870eda02170c7fa,
     type: 3}
   fadeOutPanel: {fileID: 1188059961053543029, guid: 2e3b693f08f494442ad83d9671cb7c7b,
     type: 3}

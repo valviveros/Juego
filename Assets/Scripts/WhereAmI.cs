@@ -38,10 +38,10 @@ public class WhereAmI : MonoBehaviour
         }else if (col.CompareTag("Player") && room.name == "WhereAmI3")
         {
             Debug.Log("Estoy en la Room3");
-            maxPosition.x = 74.3f;
+            maxPosition.x = 131.2f;
             maxPosition.y = 68.96f;
             minPosition.x = 15.71f;
-            minPosition.y = -1.93f;
+            minPosition.y = -5.98f;
         } else if (col.CompareTag("Player") && room.name == "WhereAmIBiblio")
         {
             Debug.Log("Estoy en la Biblio1");

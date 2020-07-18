@@ -8,7 +8,7 @@ public class ReceiveItems : MonoBehaviour
     public GameObject banner;
     public Text textItem;
     public bool haveItem;
-    public bool playerGotMap;
+    public string whichItem;
 
     // Start is called before the first frame update
     void Start()

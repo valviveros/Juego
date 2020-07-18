@@ -5,7 +5,8 @@ using UnityEngine;
 [System.Serializable]
 public class PlayerItems : MonoBehaviour
 {
-    public bool map;
+    public static bool map;
+    public static bool heart;
     // Start is called before the first frame update
     void Start()
     {
