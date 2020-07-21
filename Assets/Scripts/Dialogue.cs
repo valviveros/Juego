@@ -19,6 +19,7 @@ public class Dialogue : MonoBehaviour
     public bool playerInRange;
     public bool getItem = false;
     ReceiveItems receiveItems;
+    PlayerItems PlayerItems;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,7 @@ public class Dialogue : MonoBehaviour
         sentences = new Queue<string>();
         myAudio = GetComponent<AudioSource>();
         receiveItems = GetComponent<ReceiveItems>();
+        PlayerItems = GameObject.FindObjectOfType<PlayerItems>();
     }
 
     void startDialogue()
@@ -130,7 +132,15 @@ public class Dialogue : MonoBehaviour
         {
             receiveItems.banner.SetActive(false);
             StopAllCoroutines();
-            receiveItems.playerGotMap = true;
+            if (receiveItems.whichItem == "map")
+            {
+                Debug.Log(receiveItems.whichItem);
+                PlayerItems.map = true;
+            } else if (receiveItems.whichItem == "heart")
+            {
+                Debug.Log(receiveItems.whichItem);
+                PlayerItems.heart = true;
+            }
             receiveItems.haveItem = false;
         }
     }

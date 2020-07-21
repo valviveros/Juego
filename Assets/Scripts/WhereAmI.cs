@@ -38,10 +38,10 @@ public class WhereAmI : MonoBehaviour
         }else if (col.CompareTag("Player") && room.name == "WhereAmI3")
         {
             Debug.Log("Estoy en la Room3");
-            maxPosition.x = 37.29f;
+            maxPosition.x = 131.2f;
             maxPosition.y = 68.96f;
             minPosition.x = 15.71f;
-            minPosition.y = -1.93f;
+            minPosition.y = -5.98f;
         } else if (col.CompareTag("Player") && room.name == "WhereAmIBiblio")
         {
             Debug.Log("Estoy en la Biblio1");
@@ -63,6 +63,13 @@ public class WhereAmI : MonoBehaviour
             maxPosition.y = 4.76f;
             minPosition.x = -0.18f;
             minPosition.y = -3.88f;
+        }else if (col.CompareTag("Player") && room.name == "WhereAmICafeteriaP1")
+        {
+            Debug.Log("Estoy en la Biblio3");
+            maxPosition.x = 7.22f;
+            maxPosition.y = 24.96f;
+            minPosition.x = -16.18f;
+            minPosition.y = -2.9f;
         }
     }
 }
