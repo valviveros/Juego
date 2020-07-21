@@ -8,13 +8,13 @@ public class MapMovement : MonoBehaviour
     public float smoothing;
     public float speed;
     private Rigidbody2D myRigidbody;
-    MapView mapView;
+    MapView MapView;
     private WhereAmI WhereAmI;
     
     // Start is called before the first frame update
     void Start()
     {
-        mapView = GameObject.FindObjectOfType<MapView>();
+        MapView = GameObject.FindObjectOfType<MapView>();
         WhereAmI = GetComponent<WhereAmI>();
         myRigidbody = GetComponent<Rigidbody2D>();
     }
@@ -22,7 +22,7 @@ public class MapMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (mapView.enterMap)
+        if (MapView.enterMap)
         {
             speed = 10;
             float moveHorizontal = Input.GetAxis("Horizontal");

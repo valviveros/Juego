@@ -10,6 +10,7 @@ public class Dialogue : MonoBehaviour
     public string[] sentenceList;
     Queue<string> sentences;
     public GameObject dialogueBox;
+    public Text nicknameText;
     public Text dialogueText;
     public GameObject nextDialogue;
     string activeSentece;
@@ -42,38 +43,34 @@ public class Dialogue : MonoBehaviour
 
     void DisplayNextSentence()
     {
-        Debug.Log(sentences.Count);
         if (sentences.Count < 0)
         {
             dialogueText.text = activeSentece;
             return;
         }
-        else if (sentences.Count == 0)
+        if (sentences.Count == 0)
         {
-            Debug.Log(sentences.Count);
-            nextDialogue.SetActive(false);
             if (receiveItems.haveItem)
             {
-                nextDialogue.SetActive(true);
                 if (Input.GetKeyDown(KeyCode.Return))
                 {
                     Debug.Log("item");
                     dialogueBox.SetActive(false);
-                    nextDialogue.SetActive(false);
                     StartCoroutine(WaitItem());
                 }
             }
-        }
-        if (receiveItems.haveItem == false && sentences.Count <= 1)
-        {
-            nextDialogue.SetActive(false);
-        } else
+        } 
+        if (sentences.Count > 0)
         {
             nextDialogue.SetActive(true);
+        } 
+        if (!receiveItems.haveItem && sentences.Count == 1)
+        {
+            nextDialogue.SetActive(false);
         }
+
         activeSentece = sentences.Dequeue();
         dialogueText.text = activeSentece;
-        
         StopAllCoroutines();
         StartCoroutine(TypeTheSentence(activeSentece));
     }
@@ -102,6 +99,7 @@ public class Dialogue : MonoBehaviour
         {
             playerInRange = true;
             dialogueBox.SetActive(true);
+            nicknameText.text = nickname;
             startDialogue();
         }
     }

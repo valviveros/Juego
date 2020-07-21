@@ -10,6 +10,7 @@ public class Sign : MonoBehaviour
     public string[] sentenceList;
     Queue<string> sentences;
     public GameObject dialogueBox;
+    public Text nicknameText;
     public Text dialogueText;
     public GameObject nextDialogue;
     string activeSentece;
@@ -37,7 +38,6 @@ public class Sign : MonoBehaviour
 
     void DisplayNextSentence()
     {
-        Debug.Log(sentences.Count);
         if (sentences.Count < 0)
         {
             dialogueText.text = activeSentece;
@@ -45,7 +45,6 @@ public class Sign : MonoBehaviour
         }
         if (sentences.Count == 1)
         {
-            Debug.Log("entré");
             nextDialogue.SetActive(false);
         } else if (sentences.Count > 0)
         {
@@ -75,6 +74,7 @@ public class Sign : MonoBehaviour
         {
             playerInRange = true;
             dialogueBox.SetActive(true);
+            nicknameText.text = nickname;
             startDialogue();
         }
     }

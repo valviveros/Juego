@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 change;
     private Animator animator;
     public VectorValue startingPosition;
-    MapView mapView;
+    MapView MapView;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
         transform.position = startingPosition.initialValue;
-        mapView = GameObject.FindObjectOfType<MapView>();
+        MapView = GameObject.FindObjectOfType<MapView>();
     }
 
     // Update is called once per frame
@@ -38,11 +38,11 @@ public class PlayerMovement : MonoBehaviour
         change = Vector3.zero;
         change.x = Input.GetAxisRaw("Horizontal");
         change.y = Input.GetAxisRaw("Vertical");
-        if (Input.GetButtonDown("attack") && currentState != PlayerState.attack && currentState != PlayerState.stagger && !mapView.enterMap)
+        if (Input.GetButtonDown("attack") && currentState != PlayerState.attack && currentState != PlayerState.stagger && !MapView.enterMap)
         {
             StartCoroutine(AttackCo());
         }
-        else if (currentState == PlayerState.walk || currentState == PlayerState.idle && !mapView.enterMap)
+        else if ((currentState == PlayerState.walk || currentState == PlayerState.idle) && !MapView.enterMap)
         {
             UpdateAnimationAndMove();
         }
