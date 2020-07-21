@@ -8319,6 +8319,11 @@ MonoBehaviour:
   sceneToLoad: Biblioteca
   playerPosition: {x: 4.51, y: -13.26}
   playerStorage: {fileID: 11400000, guid: 3cc235b5a5be68043b6204b953eed2cd, type: 2}
+  fadeInpanel: {fileID: 4346101693450095566, guid: 8511210bacc7a5a40870eda02170c7fa,
+    type: 3}
+  fadeOutPanel: {fileID: 1188059961053543029, guid: 2e3b693f08f494442ad83d9671cb7c7b,
+    type: 3}
+  fadeWait: 0.33
 --- !u!61 &157397719
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52547,7 +52552,7 @@ Tilemap:
       m_TileIndex: 25
       m_TileSpriteIndex: 25
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
+      m_TileColorIndex: 1
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
@@ -52679,10 +52684,10 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
+  - m_RefCount: 0
+    m_Data: {r: 0, g: 0, b: 0, a: 0}
   - m_RefCount: 1
     m_Data: {r: 1, g: 1, b: 1, a: 1}
-  - m_RefCount: 0
-    m_Data: {r: 0.9120325, g: 0.4254072, b: 0.4557714, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: 0, y: 0, z: 0}
