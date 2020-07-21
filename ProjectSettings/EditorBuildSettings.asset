@@ -8,9 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
-    path: Assets/_Scenes/InteriorCasa1.unity
-    guid: abd111fa68c762840bd37b1c31595754
   - enabled: 1
     path: Assets/_Scenes/Biblioteca.unity
     guid: 2bbd42c89c13b1b48a61506cf8f840bb
@@ -27,9 +24,21 @@ EditorBuildSettings:
     path: Assets/_Scenes/CedroF2.unity
     guid: 785e1075f85bc5c4e857a5069ee601a8
   - enabled: 1
+    path: Assets/_Scenes/CedroF3.unity
+    guid: a8785433dc521414eb56ab88f0e43692
+  - enabled: 1
     path: Assets/_Scenes/Lago.unity
     guid: 701722f742a8d431286b4b7ed232c191
   - enabled: 1
     path: Assets/_Scenes/LagoF2.unity
     guid: 078ebc20bebc94312bf4d7b92371dd1c
+  - enabled: 1
+    path: Assets/_Scenes/LagoF3.unity
+    guid: c5b7ef534d1564b618c4c045d09b8d91
+  - enabled: 1
+    path: Assets/_Scenes/Cafeteria.unity
+    guid: 4f8fae734e7488d4fba257e48efc04c9
+  - enabled: 1
+    path: Assets/_Scenes/Enfermeria.unity
+    guid: 7c82a99c418b04fd3b455cce3c622d6d
   m_configObjects: {}

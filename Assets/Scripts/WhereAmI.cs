@@ -81,6 +81,18 @@ public class WhereAmI : MonoBehaviour
             maxPosition.y = -23.26f;
             minPosition.x = -67.29f;
             minPosition.y = -25.05f;
+        } else if (col.CompareTag("Player") && room.name == "WhereAmICafeteriaP1")
+        {
+            maxPosition.x = 7.3f;
+            maxPosition.y = 25f;
+            minPosition.x = -16.3f;
+            minPosition.y = -5f;
+        } else if (col.CompareTag("Player") && room.name == "WhereAmIEnfermeria")
+        {
+            maxPosition.x = 9.34f;
+            maxPosition.y = 4.87f;
+            minPosition.x = -0.25f;
+            minPosition.y = -10.97f;
         }
     }
 }

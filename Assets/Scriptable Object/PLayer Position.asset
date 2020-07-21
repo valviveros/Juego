@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edad6f4e40a6a7a4b803e45675b8476c, type: 3}
   m_Name: PLayer Position
   m_EditorClassIdentifier: 
-  initialValue: {x: 12.09, y: -8.18}
-  defaultValue: {x: 12.09, y: -8.18}
+  initialValue: {x: 22, y: 64.19}
+  defaultValue: {x: 25.6, y: 47.7}

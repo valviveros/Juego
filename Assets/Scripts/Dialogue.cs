@@ -63,7 +63,10 @@ public class Dialogue : MonoBehaviour
         if (sentences.Count > 0)
         {
             nextDialogue.SetActive(true);
-        } 
+        } else
+        {
+            nextDialogue.SetActive(false);
+        }
         if (!receiveItems.haveItem && sentences.Count == 1)
         {
             nextDialogue.SetActive(false);

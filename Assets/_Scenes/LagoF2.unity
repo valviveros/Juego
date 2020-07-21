@@ -5128,8 +5128,6 @@ GameObject:
   - component: {fileID: 457266872}
   - component: {fileID: 457266871}
   - component: {fileID: 457266870}
-  - component: {fileID: 457266869}
-  - component: {fileID: 457266868}
   m_Layer: 0
   m_Name: Scene Transtition UpF3
   m_TagString: Untagged
@@ -5137,34 +5135,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &457266868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 457266867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de2bd0ae10936415b8d723fa0a21c4a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &457266869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 457266867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12e646616df2247ce8e5231e79126117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enterMap: 0
-  mapBorder: {fileID: 1858560231}
-  locationIcon: {fileID: 1248208015}
-  spriteRenderer: {fileID: 202329201}
 --- !u!114 &457266870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5178,7 +5148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: LagoF3
-  playerPosition: {x: -2.92, y: -6.23}
+  playerPosition: {x: -5.49, y: -5.94}
   playerStorage: {fileID: 11400000, guid: 3cc235b5a5be68043b6204b953eed2cd, type: 2}
   fadeInpanel: {fileID: 4346101693450095566, guid: 8511210bacc7a5a40870eda02170c7fa,
     type: 3}
@@ -8033,7 +8003,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -51.88701, y: 3.436103}
+  m_Offset: {x: -51.88701, y: 3.8909314}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8044,7 +8014,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 58.067535, y: 13.084009}
+  m_Size: {x: 58.067535, y: 12.174353}
   m_EdgeRadius: 0
 --- !u!4 &801571537
 Transform:
@@ -8979,8 +8949,6 @@ GameObject:
   - component: {fileID: 1554074316}
   - component: {fileID: 1554074315}
   - component: {fileID: 1554074314}
-  - component: {fileID: 1554074313}
-  - component: {fileID: 1554074312}
   m_Layer: 0
   m_Name: Scene Transtition UpF3 (1)
   m_TagString: Untagged
@@ -8988,34 +8956,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1554074312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554074311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de2bd0ae10936415b8d723fa0a21c4a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1554074313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554074311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12e646616df2247ce8e5231e79126117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enterMap: 0
-  mapBorder: {fileID: 1858560231}
-  locationIcon: {fileID: 1248208015}
-  spriteRenderer: {fileID: 202329201}
 --- !u!114 &1554074314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9029,7 +8969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: LagoF3
-  playerPosition: {x: -2.92, y: -6.23}
+  playerPosition: {x: -68.55, y: -20.94}
   playerStorage: {fileID: 11400000, guid: 3cc235b5a5be68043b6204b953eed2cd, type: 2}
   fadeInpanel: {fileID: 4346101693450095566, guid: 8511210bacc7a5a40870eda02170c7fa,
     type: 3}
@@ -9087,8 +9027,6 @@ GameObject:
   - component: {fileID: 1559499545}
   - component: {fileID: 1559499544}
   - component: {fileID: 1559499543}
-  - component: {fileID: 1559499542}
-  - component: {fileID: 1559499541}
   m_Layer: 0
   m_Name: Scene Transtition Downf1 (1)
   m_TagString: Untagged
@@ -9096,34 +9034,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1559499541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1559499540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de2bd0ae10936415b8d723fa0a21c4a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1559499542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1559499540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12e646616df2247ce8e5231e79126117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enterMap: 0
-  mapBorder: {fileID: 1858560231}
-  locationIcon: {fileID: 1248208015}
-  spriteRenderer: {fileID: 202329201}
 --- !u!114 &1559499543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9195,8 +9105,6 @@ GameObject:
   - component: {fileID: 1560259300}
   - component: {fileID: 1560259299}
   - component: {fileID: 1560259298}
-  - component: {fileID: 1560259297}
-  - component: {fileID: 1560259296}
   m_Layer: 0
   m_Name: Scene Transtition Downf1
   m_TagString: Untagged
@@ -9204,34 +9112,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1560259296
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1560259295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de2bd0ae10936415b8d723fa0a21c4a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1560259297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1560259295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12e646616df2247ce8e5231e79126117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enterMap: 0
-  mapBorder: {fileID: 1858560231}
-  locationIcon: {fileID: 1248208015}
-  spriteRenderer: {fileID: 202329201}
 --- !u!114 &1560259298
 MonoBehaviour:
   m_ObjectHideFlags: 0
